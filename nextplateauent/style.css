@@ -1,0 +1,15 @@
+a:link {color:#D71F30; text-decoration:none;} 
+a:visited {color:#D71F30; text-decoration:none;} 
+a:hover {color:#D71F30; text-decoration:underline;} 
+a:active {color:#D71F30; text-decoration:none;}
+
+body { 
+	margin:0px;
+	background-image:url(../images/background.jpg);
+	color:#808285;
+	font-family:'Karla', sans-serif;
+}
+
+.footer {
+	font-size:12px;
+}

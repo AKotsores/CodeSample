@@ -1,0 +1,20 @@
+<div style="height:145px; border-bottom:#D71F30 5px solid">
+	<div style="width:974px; height:145px; margin:0 auto">
+    	<div style="height:145px; width:204px; float:left"><img src="images/nav_12.png" width="179" height="145" border="0" usemap="#Map">
+          <map name="Map">
+            <area shape="rect" coords="-1,1,147,121" href="index.php">
+          </map>
+		</div>
+        <div style="height:69px; width:770px; float:right; text-align:right; padding-top:30px">
+        <form action="#" method="post">
+			<div style="float:right"><input type="image" src="images/button-search.png" border="0" alt="Submit" name="search" onMouseOver="javascript:this.src='images/button-searchO.png';" onMouseOut="javascript:this.src='images/button-search.png';"></div>
+            <div style="float:right; margin-right:6px"><input name="Search" type="text" style="width:350px; height:28px; border:#A7A9AC solid 1px; padding-left:10px; padding-right:10px; font-family:'Karla', sans-serif; font-size:14px; color:#939598; font-style:italic" value="<?php echo $search; ?>" onClick="clearField(this, '<?php echo $search; ?>')" onBlur="recallField(this, '<?php echo $search; ?>')"></div>        
+        </form>
+        <?php if(!empty($search_status)) { ?>
+        	<div style="width:668px; float:right; color:#D71F30; font-size:12px; padding-right:102px"><?php echo $search_status; ?></div>
+        <?php } ?>
+        </div>
+        <div style="height:46px; width:726px; float:right; overflow:hidden"><?php if($page == "index.php") { ?><a href="index.php"><img src="images/navO_24.png" border="0"></a><?php } else { ?><a href="index.php" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Home','','images/navO_24.png',1)"><img src="images/nav_24.png" alt="Home" name="Home" width="62" height="46" border="0"></a><?php } if(($page == "artists.php") || ($page == "all.php") || ($page == "profile.php")) { ?><a href="artists.php"><img src="images/navO_25.png" border="0"></a><?php } else { ?><a href="artists.php" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Artists','','images/navO_25.png',1)"><img src="images/nav_25.png" alt="Artists" name="Artists" width="105" height="46" border="0"></a><?php } if(($page == "releases.php") || ($page == "allreleases.php")) { ?><a href="releases.php"><img src="images/releasesO.png" border="0"></a><?php } else { ?><a href="releases.php" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Releases','','images/releasesO.png',1)"><img src="images/releases.png" alt="Releases" name="Releases" width="105" height="46" border="0"></a><?php } if(($page == "compilations.php") || ($page == "details.php")) { ?><a href="compilations.php"><img src="images/navO_26.png" border="0"></a><?php } else { ?><a href="compilations.php" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Compilations','','images/navO_26.png',1)"><img src="images/nav_26.png" alt="Compilations" name="Compilations" width="146" height="46" border="0"></a><?php } if($page == "publishing.php") { ?><a href="publishing.php"><img src="images/navO_27.png" border="0"></a><?php } else { ?><a href="publishing.php" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Publishing','','images/navO_27.png',1)"><img src="images/nav_27.png" alt="Publishing" name="Publishing" width="132" height="46" border="0"></a><?php } if($page == "about.php") { ?><a href="about.php"><img src="images/navO_28.png" border="0"></a><?php } else { ?><a href="about.php" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('About','','images/navO_28.png',1)"><img src="images/nav_28.png" alt="About" name="About" width="94" height="46" border="0"></a><?php } if($page == "contact.php") { ?><a href="contact.php"><img src="images/navO_29.png" border="0"></a><?php } else { ?><a href="contact.php" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Contact','','images/navO_29.png',1)"><img src="images/nav_29.png" alt="Contact" name="Contact" width="82" height="46" border="0"></a><?php } ?></div>
+    </div>
+</div>
+<div style="height:3px"></div>
